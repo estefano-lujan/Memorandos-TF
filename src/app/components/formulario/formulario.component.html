@@ -1,1 +1,81 @@
-<p>formulario works!</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<div class="container">
+    <div class="card">
+    <div class="card-header">
+    <h4>Registrarse</h4>
+    </div>
+    <div class="card-body">
+    <form [formGroup]="miRegistro"
+    (ngSubmit)="enviar(miRegistro.value)">
+    <div class="form-group">
+<label>Apellido</label>
+<input type="text" class="form-control" formControlName="Apellido" >
+</div>
+<div class="form-group">
+<label>Nombre</label>
+<input type="text" class="form-control" formControlName="Nombre" >
+</div>
+<div class="form-group">
+<label>Telefono</label>
+<input type="text" class="form-control" formControlName="telefono" >
+</div>
+
+    Email: <input type="text" class="form-control"
+    formControlName="userEmail"><br>
+    Contraseña: <input type="password" class="form-control"
+    formControlName="userPassword"><br>
+    Repetir Contraseña: <input type="password" class="form-control"
+    formControlName="userPassword"><br>
+    
+    <p class="prov"></p>
+        <label>
+            Selecciona tu Provincia: <br>
+            <select name="Pais" class="prov">
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+            </select>
+        </label>
+        <p class="pais"></p>
+        <label>
+            Selecciona tu Provincia: <br>
+            <select name="Pais" class="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Peru">Peru</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                
+            </select>
+        </label> <br>
+        
+        
+            <label><br>
+        <button [disabled]="miRegistro.invalid" class="btn
+        btn-primary" type="submit">Enviar</button> 
+    </label>
+
+    
+    </form>
+    </div>
+    </div>
+    </div>
+    
