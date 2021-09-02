@@ -1,0 +1,20 @@
+<nav class="navbar-dark bg-dark" style="margin-bottom: 150;"></nav>
+<div class="container">
+    <div class="card">
+    <div class="card-header">
+    <h4>Registrarse</h4>
+    </div>
+    <div class="card-body">
+    Pasar data <input type="text" class="form-control" [(ngModel)]="enterName"/>
+              <input type="button" value="send" (click)="TransFerData()"class="btn-btn primary"/>
+              <app-recibiendo-memorandos [parentData]="parentData"></app-recibiendo-memorandos>
+            </div>
+        <label>
+            Destinatario: <br>
+            <select name="Pais" class="prov">
+                <option value="(Ceo) Estefano Lujan">(Ceo) Estefano Lujan</option>
+                <option value="(Gerente de marketing) Juan Perez">(Gerente de marketing) Juan Perez</option>
+                <option value="(Supervisor de ventas) Leandro Gomez">(Supervisor de ventas) Leandro Gomez</option>
+                
+            </select>
+        </label>

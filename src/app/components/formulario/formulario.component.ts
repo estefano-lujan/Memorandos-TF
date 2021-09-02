@@ -5,7 +5,7 @@ selector: 'app-root',
 templateUrl: './formulario.component.html',
 styleUrls: ['./formulario.component.css']
 })
-export class formularioComponent {
+export class FormularioComponent {
 miRegistro: FormGroup
 constructor( private _builder: FormBuilder){
 this.miRegistro= this._builder.group({
