@@ -1,12 +1,13 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <nav class="navbar-dark bg-dark" style="margin-bottom: 150;"></nav>
 <div class="container">
     <div class="card">
     <div class="card-header">
-    <h4>Registrarse</h4>
+    <h4>Enviar Memorandos</h4>
     </div>
     <div class="card-body">
-    Pasar data <input type="text" class="form-control" [(ngModel)]="enterName"/>
-              <input type="button" value="send" (click)="TransFerData()"class="btn-btn primary"/>
+    Mensaje <input type="text" class="form-control" maxlength="144" [(ngModel)]="enterName"/>
+              <input type="button" value="Enviar" (click)="TransFerData()"class="btn-btn primary"/>
               <app-recibiendo-memorandos [parentData]="parentData"></app-recibiendo-memorandos>
             </div>
         <label>
@@ -18,3 +19,4 @@
                 
             </select>
         </label>
+        <router-outlet name="Enviar mensaje"></router-outlet>
