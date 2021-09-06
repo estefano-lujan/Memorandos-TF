@@ -9,7 +9,7 @@ import { EnviarmemorandosComponent, } from './components/enviar-memorandos/envia
 import { RecibiendoMemorandosComponent } from './components/recibiendo-memorandos/recibiendo-memorandos.component';
 
 
-@NgModule({
+@NgModule ({
 declarations: [
 AppComponent,
 FormularioComponent,

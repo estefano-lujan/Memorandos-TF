@@ -1,4 +1,4 @@
-import { Component, Input  } from '@angular/core';
+import { Component  } from '@angular/core';
 @Component({
 selector: 'app-root',
 templateUrl: './enviar-memorandos.component.html',
@@ -6,10 +6,15 @@ styleUrls: ['./enviar-memorandos.component.css']
 })
 export class EnviarmemorandosComponent {
 
-constructor() {}
-    @Input()
-    parentData:string  ;
+    constructor() { }
+  
+    enterName =" ";
+    parentData =" ";
+
+TransFerData() {
+  this.parentData = this.enterName;
+
+   
+    
 }
-
-
-
+}
